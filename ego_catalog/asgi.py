@@ -1,5 +1,5 @@
 """
-ASGI config for eco_catalog project.
+ASGI config for ego_catalog project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'eco_catalog.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ego_catalog.settings')
 
 application = get_asgi_application()
