@@ -23,7 +23,7 @@ Para evitar conflictos con otras aplicaciones Python en tu sistema, puedes usar 
 
 2. Crea un nuevo entorno virtual en el directorio del proyecto:
     ```bash
-    python -m venv venv
+    python3 -m venv venv
     ```
 
 3. Activa el entorno virtual:
@@ -38,7 +38,45 @@ Para evitar conflictos con otras aplicaciones Python en tu sistema, puedes usar 
 
 ## Instalación de Dependencias
 
-Instala las dependencias del proyecto usando `pip`:
+Instala las dependencias del proyecto usando `pip` (instalar pip en caso de ser necesario):
 
 ```bash
 pip install -r requirements.txt
+```
+
+## Configuración de la base de datos
+
+En el archivo settings.py del proyecto, modificar el apartado DATABASES:
+
+```bash
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+```
+
+Luego correr las migraciónes para la creación de las tablas dentro de la base de datos:
+
+```bash
+python manage.py makemigrations
+
+python manage.py migrate
+```
+
+## Ejecución del sistema
+
+Una vez realizadas todas las configuraciones necesarias, ejecutar el software de forma local:
+
+```bash
+python manage.py runserver
+```
+
+Ahora el sistema debería ser accesible desde localhost o 127.0.0.1, utilizando el puerto que se le haya asignado (generalmente es el puerto 8000)
+
+```bash
+localhost:8000
+
+127.0.0.1:8000
+```
