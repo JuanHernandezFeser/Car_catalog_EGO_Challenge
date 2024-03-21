@@ -61,7 +61,7 @@ DATABASES = {
 }
 ```
 
-Luego correr las migraciónes para la creación de las tablas dentro de la base de datos:
+En caso de utilizar una base de datos diferente a la que se provee en el proyecto, correr las migraciónes para la creación de las tablas dentro de la base de datos:
 
 ```bash
 python manage.py makemigrations
@@ -98,6 +98,12 @@ Contraseña
 
 ```bash
 123456
+```
+
+O bien crear un nuevo superusuario utilizando el siguiente comando:
+
+```bash
+python3 manage.py createsuperuser
 ```
 
 ## URLS importantes
