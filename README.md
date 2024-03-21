@@ -85,6 +85,21 @@ localhost:8000
 127.0.0.1:8000
 ```
 
+## ADMIN
+
+Para acceder al /admin/ de la API, es necesario loguearse con:
+
+Usuario
+
+```bash
+superadmin
+```
+Contraseña
+
+```bash
+123456
+```
+
 ## URLS importantes
 
 Para acceder al listado de automoviles realizando un filtro según la categoría en la que se encuentran y ordenandolos por el año o el precio, utilizamos la siguiente ruta:
