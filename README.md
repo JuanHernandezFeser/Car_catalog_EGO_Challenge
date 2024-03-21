@@ -8,7 +8,7 @@ Breve descripción del proyecto.
 
 ## Requisitos Previos
 
-Asegúrate de tener instalado lo siguiente en tu sistema:
+Asegurarse de tener instalado lo siguiente en el sistema:
 
 - Python (versión 3)
 
