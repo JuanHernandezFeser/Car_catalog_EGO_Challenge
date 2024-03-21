@@ -1,7 +1,3 @@
-/cars/filter_and_order/?category_id={id}&order_by={field}&order_direction={order}
-/cars/filter_and_order/?order_by={field}&order_direction={order}
-/cars/filter_and_order/?category_id={nro}
-
 # EGO CHALLENGE API
 
 Catálogo de automoviles para la empresa EGO (api con Django Rest Framework)
@@ -11,6 +7,14 @@ Catálogo de automoviles para la empresa EGO (api con Django Rest Framework)
 Asegurarse de tener instalado lo siguiente en el sistema:
 
 - Python (versión 3)
+
+## Clonación del repositorio
+
+El sistema puede ser descargado en forma de archivo comprimido (.zip) o bien puede ser clonado dentro de una carpeta indicada
+
+```bash
+    git clone https://github.com/JuanHernandezFeser/Car_catalog_EGO_Challenge.git .
+```
 
 ## Configuración del Entorno Virtual
 
@@ -79,4 +83,30 @@ Ahora el sistema debería ser accesible desde localhost o 127.0.0.1, utilizando 
 localhost:8000
 
 127.0.0.1:8000
+```
+
+## URLS importantes
+
+Para acceder al listado de automoviles realizando un filtro según la categoría en la que se encuentran y ordenandolos por el año o el precio, utilizamos la siguiente ruta:
+
+```bash
+/cars/filter_and_order/?category_id={id}&order_by={field}&order_direction={order}
+```
+
+Por ejemplo:
+
+```bash
+/cars/filter_and_order/?category_id=1&order_by=year&order_direction=asc
+```
+
+De la misma forma, se pueden realizar ordenamientos por año/precio, sin haber realizado un filtrado previo:
+
+```bash
+/cars/filter_and_order/?order_by={field}&order_direction={order}
+```
+
+O bien, se puede realizar un filtrado por categoría, utilizando el ordenamiento por defecto:
+
+```bash
+/cars/filter_and_order/?category_id={nro}
 ```
