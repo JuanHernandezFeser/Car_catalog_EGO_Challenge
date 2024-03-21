@@ -13,7 +13,7 @@ Asegurarse de tener instalado lo siguiente en el sistema:
 El sistema puede ser descargado en forma de archivo comprimido (.zip) o bien puede ser clonado dentro de una carpeta indicada
 
 ```bash
-    git clone https://github.com/JuanHernandezFeser/Car_catalog_EGO_Challenge.git .
+git clone https://github.com/JuanHernandezFeser/Car_catalog_EGO_Challenge.git .
 ```
 
 ## Configuración del Entorno Virtual
