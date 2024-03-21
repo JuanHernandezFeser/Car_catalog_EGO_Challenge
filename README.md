@@ -4,7 +4,7 @@
 
 # EGO CHALLENGE API
 
-Breve descripción del proyecto.
+Catálogo de automoviles para la empresa EGO (api con Django Rest Framework)
 
 ## Requisitos Previos
 
