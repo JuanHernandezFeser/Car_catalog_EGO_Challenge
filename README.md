@@ -111,23 +111,23 @@ python3 manage.py createsuperuser
 Para acceder al listado de automoviles realizando un filtro según la categoría en la que se encuentran y ordenandolos por el año o el precio, utilizamos la siguiente ruta:
 
 ```bash
-/cars/filter_and_order/?category_id={id}&order_by={field}&order_direction={order}
+api/cars/filter_and_order/?category_id={id}&order_by={field}&order_direction={order}
 ```
 
 Por ejemplo:
 
 ```bash
-/cars/filter_and_order/?category_id=1&order_by=year&order_direction=asc
+api/cars/filter_and_order/?category_id=1&order_by=year&order_direction=asc
 ```
 
 De la misma forma, se pueden realizar ordenamientos por año/precio, sin haber realizado un filtrado previo:
 
 ```bash
-/cars/filter_and_order/?order_by={field}&order_direction={order}
+api/cars/filter_and_order/?order_by={field}&order_direction={order}
 ```
 
 O bien, se puede realizar un filtrado por categoría, utilizando el ordenamiento por defecto:
 
 ```bash
-/cars/filter_and_order/?category_id={nro}
+api/cars/filter_and_order/?category_id={nro}
 ```
